@@ -3,4 +3,5 @@
     <x-banner/>
     <x-search/>
     <x-post-section/>
+    <x-footer/>
 </x-layout>
