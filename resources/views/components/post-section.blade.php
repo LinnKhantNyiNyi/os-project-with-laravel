@@ -6,7 +6,7 @@
       <!-----------Post section----------->
       <div class="row g-5 product mt-2">
         <div class="col col-md-4">
-          <a href="show.html" class="text-decoration-none text-dark">
+          <a href="/show" class="text-decoration-none text-dark">
             <div class="card shadow p-2">
               <img
                 src="img/nl.jpg"
