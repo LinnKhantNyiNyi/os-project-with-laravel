@@ -23,7 +23,7 @@
                 <a
                   class="nav-link active mt-2 text-white"
                   aria-current="page"
-                  href="#"
+                  href="/create"
                   >Posts</a
                 >
               </li>

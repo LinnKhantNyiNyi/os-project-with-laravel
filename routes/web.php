@@ -28,3 +28,7 @@ Route::get('/register',function(){
 Route::get('/login',function(){
     return view('form.login');
 });
+
+Route::get('/create',function(){
+    return view('auth.create');
+});
