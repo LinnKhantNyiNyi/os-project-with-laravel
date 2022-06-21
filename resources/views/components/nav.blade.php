@@ -1,7 +1,7 @@
   <!---------------------------NavBar---------------------------------->
     <div class="container-xxl bg shadow">
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand text-white" href="#"
+        <a class="navbar-brand text-white" href="/"
           >DearRosie <img src="./img/buterflies.png" height="40px" width="40px"
         /></a>
 
@@ -23,17 +23,17 @@
                 <a
                   class="nav-link active mt-2 text-white"
                   aria-current="page"
-                  href="posts.html"
+                  href="#"
                   >Posts</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active mt-2 text-white" href="register.html"
+                <a class="nav-link active mt-2 text-white" href="/register"
                   >Register</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active mt-2 text-white" href="login.html"
+                <a class="nav-link active mt-2 text-white" href="/login"
                   >Login</a
                 >
               </li>
