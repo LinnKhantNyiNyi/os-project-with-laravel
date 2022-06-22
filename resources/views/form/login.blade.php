@@ -1,7 +1,7 @@
 <x-layout>
     <x-nav/>
       <!--------------form-->
-     <div class="container my-4 form">
+     <div class="container border form">
         <div class="row">
             <div class=" col-md-5 mx-auto">
                 <div class="card p-4 my-3 bg2">
@@ -16,7 +16,7 @@
                           <label for="exampleInputPassword1" class="form-label">Password</label>
                           <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-secondary">Login</button>
                       </form>
                 </div>
             </div>

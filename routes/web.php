@@ -32,3 +32,7 @@ Route::get('/login',function(){
 Route::get('/create',function(){
     return view('auth.create');
 });
+
+Route::get('/buy',function(){
+    return view('order');
+});

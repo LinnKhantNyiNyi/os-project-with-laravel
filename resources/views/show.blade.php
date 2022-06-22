@@ -25,7 +25,7 @@
      </div>
      
      <div class="d-flex justify-content-around mt-5 py-5">
-      <button class="btn bg buy p-3 font text-white fs-4 m-2 shadow " type="submit">Buy</button>
+      <button class="btn bg-secondary  buy p-3 font  fs-4 m-2 shadow " type="submit"><a href="/buy" class="text-decoration-none text-white">Buy</a></button>
       <button class="btn btn-secondary buy p-3 font fs-4 m-2 shadow " type="submit"> Add Cart<i class="fas fa-shopping-cart text-white ms-2"></i></button>
      </div>
      
