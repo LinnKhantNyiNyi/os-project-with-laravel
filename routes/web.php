@@ -1,5 +1,9 @@
 <?php
 
+use App\Models\Admin;
+use App\Models\Comment;
+use App\Models\Order;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index',[
+        'products' => Product::all()
+    ]);
 });
 
 Route::get('/show', function () {

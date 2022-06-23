@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Admin extends Model
 {
     use HasFactory;
+
+
+public function product(){
+    return $this->hasMany(Product::class);
 }
+public function comment(){
+    return $this->hasMany(Comment::class);
+}
+}
+
