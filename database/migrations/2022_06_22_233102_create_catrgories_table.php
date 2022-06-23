@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('catrgories', function (Blueprint $table) {
             $table->id();
+            $table->string('slug');
+            $table->string('name');
             $table->timestamps();
         });
     }
