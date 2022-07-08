@@ -24,7 +24,7 @@ class ProductFactory extends Factory
         'admin_id'=>Admin::factory(),
         'category_id'=>Category::factory(),
         'name'=>$this->faker->name(),
-        'price'=>$this->faker->text()
+        'price'=>$this->faker->numerify('####')
         ];
     }
 }

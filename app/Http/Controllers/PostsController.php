@@ -13,7 +13,9 @@ class PostsController extends Controller
         ]);
     }
 
-    public function show(){
-        return view('show');
+    public function show(Product $product){
+        return view('show',[
+            "product"=>$product
+        ]);
     }
 }

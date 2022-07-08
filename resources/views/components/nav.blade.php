@@ -2,7 +2,7 @@
     <div class="container-xxl bg shadow">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand text-white" href="/"
-          >Navbar <img src="./img/buterflies.png" height="40px" width="40px"
+          >Navbar <img src="/img/buterflies.png" height="40px" width="40px"
         /></a>
 
         <button
@@ -46,7 +46,7 @@
                   aria-controls="offcanvasExample"
                 >
                   Name<img
-                    src="./img/blank-profile-picture-973460__340.webp"
+                    src="/img/blank-profile-picture-973460__340.webp"
                     class="rounded-circle ms-3 mb-1"
                     height="40px"
                     width="40px"

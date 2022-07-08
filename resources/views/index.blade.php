@@ -3,6 +3,6 @@
     <x-nav/>
     <x-banner/>
     <x-search/>
-    <x-post-section/>
+    <x-post-section :products="$products"/>
     <x-footer/>
 </x-layout>

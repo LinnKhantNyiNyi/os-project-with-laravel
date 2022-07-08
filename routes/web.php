@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PostsController::class,'index']);
 
-Route::get('/show', [PostsController::class,'show']);
+Route::get('/show/{product}', [PostsController::class,'show']);
 
 Route::get('/register',[AuthController::class,"register"]);
 

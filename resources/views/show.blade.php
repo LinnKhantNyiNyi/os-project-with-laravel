@@ -1,3 +1,4 @@
+
 <x-layout>
     <x-nav/>
 
@@ -8,20 +9,20 @@
   <div class="row ">
 <!----------------photos-->
     <div class="col col-lg-4 bg2 photos  mt-2">
-      <img src="img/blank-profile-picture-973460__340.webp" width="100%" class="responsive-fluid">
+      <img src="/img/dr1.jpg" width="100%" class="responsive-fluid">
       <div class="d-flex justify-content-center">
-        <img src="img/blank-profile-picture-973460__340.webp" width="50%" class="responsive-fluid">
-        <img src="img/blank-profile-picture-973460__340.webp" width="50%" class="responsive-fluid">
+        <img src="/img/blank-profile-picture-973460__340.webp" width="50%" class="responsive-fluid">
+        <img src="/img/blank-profile-picture-973460__340.webp" width="50%" class="responsive-fluid">
       </div>
     </div>
 
     <div class="col col-lg-8 col-md-12 bg2 ">
       <div class="border-bottom border-secondary">
-       <h2 class="text-center my-3 p-4 font text-dark fs-3">Product Name</h2>
+       <h2 class="text-center my-3 p-4 font text-dark fs-3">{{$product->name}}</h2>
      </div>
      
      <div class="my-3 p-3">
-      <h1 class="text-start ms-4 mt-5 font text-dark fs-1">Price-K</h1>
+      <h1 class="text-start ms-4 mt-5 font text-dark fs-1">{{$product->price}}</h1>
      </div>
      
      <div class="d-flex justify-content-around mt-5 py-5">
