@@ -37,6 +37,7 @@
                   >Login</a
                 >
               </li>
+              @auth
               <li class="nav-item">
                 <a
                   class="nav-link mt-1 active text-white"
@@ -45,7 +46,7 @@
                   role="button"
                   aria-controls="offcanvasExample"
                 >
-                  Name<img
+                  {{auth()->user()->name}}<img
                     src="/img/blank-profile-picture-973460__340.webp"
                     class="rounded-circle ms-3 mb-1"
                     height="40px"
@@ -53,6 +54,8 @@
                   />
                 </a>
               </li>
+              @endauth
+             
             </ul>
           </div>
         </div>

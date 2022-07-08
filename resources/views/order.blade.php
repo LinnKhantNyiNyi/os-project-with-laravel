@@ -12,6 +12,10 @@
                           <input type="text" class="form-control" id="address" aria-describedby="address">
                           <div id="emailHelp" class="form-text">Please enter your delivery address correctly.</div>
                         </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label font text-dark">Phone Number</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
                         <select class="form-select mb-3" aria-label="Payment">
                              <option selected>Please select payment method </option>
                              <option value="">Cash on Delivery</option>

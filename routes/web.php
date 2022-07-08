@@ -24,6 +24,7 @@ Route::get('/', [PostsController::class,'index']);
 Route::get('/show/{product}', [PostsController::class,'show']);
 
 Route::get('/register',[AuthController::class,"register"]);
+Route::post('/register',[AuthController::class,"store"]);
 
 Route::get('/login',[AuthController::class,'login']);
 

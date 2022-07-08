@@ -2,8 +2,9 @@
 
 namespace Database\Factories;
 
-use App\Models\customer;
+
 use App\Models\Product;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -24,7 +25,7 @@ class CommentFactory extends Factory
             // $table->text('body');
 
             'product_id'=>Product::factory(),
-            "user_id"=>customer::factory(),
+            "user_id"=>User::factory(),
             "body"=>$this->faker->paragraph()
         ];
     }
