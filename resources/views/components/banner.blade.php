@@ -2,12 +2,12 @@
 
     <section class="container-xxl banner">
       <div class="d-flex justify-content-center mobile">
-        <h1 class="font text-dark logo">DearRosie</h1>
+        <h1 class="font text-dark logo">Shop</h1>
       </div>
 
       <div class="d-flex justify-content-around">
         <div class="d-flex align-items-center ms-2">
-          <h1 class="display-1 mainlogo desktop">DearRosie</h1>
+          <h1 class="display-1 mainlogo desktop">Shop</h1>
         </div>
 
         <div class="d-flex justify-content-center me-4">

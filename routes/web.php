@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PostsController;
 use App\Models\Admin;
 use App\Models\Comment;
 use App\Models\Order;
@@ -17,27 +19,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index',[
-        'products' => Product::all()
-    ]);
-});
+Route::get('/', [PostsController::class,'index']);
 
-Route::get('/show', function () {
-    return view('show');
-});
+Route::get('/show', [PostsController::class,'show']);
 
-Route::get('/register',function(){
-    return view('form.register');
-});
+Route::get('/register',[AuthController::class,"register"]);
 
-Route::get('/login',function(){
-    return view('form.login');
-});
+Route::get('/login',[AuthController::class,'login']);
 
-Route::get('/create',function(){
-    return view('auth.create');
-});
+Route::get('/create',[AuthController::class,"create"]);
 
 Route::get('/buy',function(){
     return view('order');

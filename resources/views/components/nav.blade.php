@@ -2,7 +2,7 @@
     <div class="container-xxl bg shadow">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand text-white" href="/"
-          >DearRosie <img src="./img/buterflies.png" height="40px" width="40px"
+          >Navbar <img src="./img/buterflies.png" height="40px" width="40px"
         /></a>
 
         <button
