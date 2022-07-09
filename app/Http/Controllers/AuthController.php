@@ -22,6 +22,8 @@ public function store(){
    "password"=>["required",'min:8',"max:225"]
  ]);
 
+ $formData['password']=bcrypt($formData['password']);
+
 $user=User::create($formData);
 auth()->login($user);
 return redirect('/');
@@ -32,6 +34,22 @@ return redirect('/');
 //login page-----------------------------------------------------------------------//
 public function login(){
     return view('form.login');
+}
+
+public function relogin(){
+  $formData=request()->validate([
+  "email"=>["required",'email',Rule::exists('users','email')],
+   "password"=>["required",'min:8',"max:225"]
+ ]);
+
+ if(auth()->attempt($formData)){
+         return redirect('/');
+ } else {
+         return redirect()->back()->withErrors([
+          "email"=>"email or password is incorrect"
+      ]);
+ }
+ 
 }
 
 //admin page-----------------------------------------------------------------------//
