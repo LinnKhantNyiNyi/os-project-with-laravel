@@ -42,9 +42,13 @@
         </div>
 
         <div class="border-bottom border-secondary p-3">
-          <button class="history btn border-0 text-start font" type="button">
+          <form action="/logout" method="POST">
+            @csrf
+            <button class="history btn border-0 text-start font" type="submit">
             Log out
           </button>
+          </form>
+         
         </div>
       </div>
     </div>

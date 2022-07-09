@@ -27,6 +27,8 @@
                   >Posts</a
                 >
               </li>
+              @guest
+                  
               <li class="nav-item">
                 <a class="nav-link active mt-2 text-white" href="/register"
                   >Register</a
@@ -37,6 +39,8 @@
                   >Login</a
                 >
               </li>
+                 @endguest
+           
               @auth
               <li class="nav-item">
                 <a
