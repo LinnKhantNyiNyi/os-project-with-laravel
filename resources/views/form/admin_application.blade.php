@@ -5,7 +5,7 @@
         <div class="row">
             <div class=" col-md-5 mx-auto">
                 <div class="card p-4 my-3 bg2">
-                    <form action="/register" method="POST">
+                    <form action="/application" method="POST">
                     @csrf
                         <div class="mb-3">
                           <label for="email" class="form-label font text-dark">Email address</label>
@@ -41,8 +41,8 @@
                             type="text" 
                             class="form-control" 
                             id="name" 
-                            name="phonenumber" 
-                            value="{{old('phonenumber')}}"
+                            name="ph_num" 
+                            value="{{old('ph_num')}}"
                             required>
                          @error("phonenumber")
                               <p class="text-danger">{{$message}}</p>
@@ -75,12 +75,6 @@
                           @enderror
                         </div>
 
-                        <div class="form-check mb-3">
-                           <input class="form-check-input" type="checkbox" value="true" id="flexCheckDefault" name="confirm">
-                           <label class="form-check-label" for="flexCheckDefault">
-                           You Are applying to become an admin.
-                           </label>
-                         </div>
                         <button type="submit" class="btn btn-outline-secondary font text-dark">Submit</button>
                       </form>
                 </div>

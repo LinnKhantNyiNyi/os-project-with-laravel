@@ -37,3 +37,4 @@ Route::get('/buy',function(){
 });
 
 Route::get('/application',[AuthController::class,"application"]);
+Route::post('/application',[AuthController::class, "receive"]);
