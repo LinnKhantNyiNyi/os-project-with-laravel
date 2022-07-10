@@ -23,12 +23,12 @@ Route::get('/', [PostsController::class,'index']);
 
 Route::get('/show/{product}', [PostsController::class,'show']);
 
-Route::get('/register',[AuthController::class,"register"]);
-Route::post('/register',[AuthController::class,"store"]);
+Route::get('/register',[AuthController::class,"register"])->middleware('guest');
+Route::post('/register',[AuthController::class,"store"])->middleware('guest');
 
-Route::get('/login',[AuthController::class,'login']);
-Route::post('/login',[AuthController::class,'relogin']);
-Route::post('/logout',[AuthController::class,'logout']);
+Route::get('/login',[AuthController::class,'login'])->middleware('guest');
+Route::post('/login',[AuthController::class,'relogin'])->middleware('guest');
+Route::post('/logout',[AuthController::class,'logout'])->middleware('auth');
 
 Route::get('/create',[AuthController::class,"create"]);
 

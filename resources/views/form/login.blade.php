@@ -10,7 +10,12 @@
         
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                          <input type="email" 
+                          class="form-control" 
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp" 
+                          name="email"
+                          value="{{old('email')}}">
                         @error('email')
                            <p class="text-danger">{{$message}}</p> 
                         @enderror
