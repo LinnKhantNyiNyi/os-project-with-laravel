@@ -35,3 +35,5 @@ Route::get('/create',[AuthController::class,"create"]);
 Route::get('/buy',function(){
     return view('order');
 });
+
+Route::get('/application',[AuthController::class,"application"]);

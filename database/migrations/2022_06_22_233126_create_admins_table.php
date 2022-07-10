@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('password');
             $table->boolean('is_admin')->default(true);
             $table->string('ph_number');
+            $table->string('address');
             $table->timestamps();
         });
     }
