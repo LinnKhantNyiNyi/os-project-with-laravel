@@ -27,6 +27,14 @@
                   >Posts</a
                 >
               </li>
+                <li class="nav-item">
+                <a
+                  class="nav-link active mt-2 text-white"
+                  aria-current="page"
+                  href="/owner"
+                  >Crontrol pannel</a
+                >
+              </li>
               @guest
                   
               <li class="nav-item">

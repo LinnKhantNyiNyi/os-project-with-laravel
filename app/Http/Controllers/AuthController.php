@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Models\Application;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Validation\Rule;
 use Symfony\Component\CssSelector\Node\FunctionNode;
 
@@ -54,38 +55,29 @@ public function relogin(){
  
 }
 
+//logout-------------------------------------------------------------------------//
+public function logout(){
+    auth()->logout();
+    return redirect('/');
+}
+
 //admin page-----------------------------------------------------------------------//
 public function create(){
      return view('auth.create');
 }
 
 
-
-//admin_application----------------------------------------------------------------//
-
-public function application(){
-  return view('form.admin_application');
-}
-
-public function receive(){
-     $formData=request()->validate([
-  "email"=>["required",'email',Rule::unique('applications','email')],
-  "name"=>["required",'min:4',"max:225",Rule::unique('applications','name')],
-  "ph_num"=>["required","min:11","max:11"],
-  "address"=>["required","max:225"],
-  "password"=>["required",'min:8',"max:225"]
-]);
-
-Application::create($formData);
-return redirect('/');
+//owner page--------------------------------------------------------------------//
+public function owner(){
+  return view('auth.owner');
 }
 
 
-//logout-------------------------------------------------------------------------//
-public function logout(){
-    auth()->logout();
-    return redirect('/');
-}
+
+
+
+
+
 
 
 }

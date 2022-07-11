@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('email');
             $table->text('password');
             $table->boolean('is_admin')->default(true);
+            $table->boolean('is_owner')->default(false);
             $table->string('ph_number');
             $table->string('address');
             $table->timestamps();

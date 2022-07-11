@@ -35,6 +35,20 @@
                           @enderror
                           </div>
 
+                           <div class="mb-3">
+                            <label for="shopname" class="form-label font text-dark">Shop Name</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="shopname" 
+                            name="shopname" 
+                            value="{{old('ownername')}}"
+                            required>
+                            @error("shopname")
+                              <p class="text-danger">{{$message}}</p>
+                          @enderror
+                          </div>
+
                         <div class="mb-3">
                             <label for="name" class="form-label font text-dark">Phone Number</label>
                             <input 
@@ -63,17 +77,7 @@
                           @enderror
                           </div>
                           
-                        <div class="mb-3">
-                          <label for="password" class="form-label font text-dark">Password</label>
-                          <input type="password" 
-                          class="form-control" 
-                          id="password"  
-                          name="password" 
-                          required>
-                          @error("password")
-                              <p class="text-danger">{{$message}}</p>
-                          @enderror
-                        </div>
+                       
 
                         <button type="submit" class="btn btn-outline-secondary font text-dark">Submit</button>
                       </form>
