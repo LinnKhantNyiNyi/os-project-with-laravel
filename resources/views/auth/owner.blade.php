@@ -1,3 +1,4 @@
+
 <x-layout>
 <x-nav/>
 <x-table/>
@@ -9,12 +10,16 @@
             <h3 class="text-center">Admin List</h3>
             <div class="row">
                 <div class="col col-12">
-                     <div class="card">
+                    @foreach ($admins as $admin)
+                          <div class="card mb-2">
                         <div class="card-body">
-                            <h5 class="card-title">Shop Name</h5>
-                                 <p class="card-text">Owner Name</p>
-                         </div>
+                            <h5 class="card-title">{{$admin->name}}</h5>
+                                 <p class="card-text">{{$admin->shopname}}</p>
+                                 <p class="card-text">{{$admin->email}}</p>
+                            </div>
                     </div>
+                    @endforeach
+                  
                 </div>
             </div>
     </div>
@@ -23,13 +28,16 @@
             <div class="row">
                 <div class="col col-12">
                      <h3 class="text-center">Admin Applications</h3>
-                    <div class="card">
+                     @foreach ($applications as $application)
+                         <div class="card mb-2">
                         <div class="card-body">
-                            <h5 class="card-title">Owner Name</h5>
-                                 <p class="card-text mt-1 mb-0">Shop name</p>
-                                 <p class="mt-4">Date/Time</p>
+                            <h5 class="card-title">{{$application->name}}</h5>
+                                 <p class="card-text mt-1 mb-0">{{$application->shopname}}</p>
+                                 <p class="mt-4">{{$application->created_at}}</p>
                          </div>
                     </div>
+                     @endforeach
+                    
                 </div>
        </div>
 </div>

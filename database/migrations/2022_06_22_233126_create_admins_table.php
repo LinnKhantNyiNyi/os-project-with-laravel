@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('admins', function (Blueprint $table) {
             $table->id();
             $table->text('name');
+            $table->text('shopname');
             $table->text('email');
             $table->text('password');
             $table->boolean('is_admin')->default(true);

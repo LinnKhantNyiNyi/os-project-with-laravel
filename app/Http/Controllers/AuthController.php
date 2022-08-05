@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\Admin;
 use App\Models\Application;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -69,7 +69,10 @@ public function create(){
 
 //owner page--------------------------------------------------------------------//
 public function owner(){
-  return view('auth.owner');
+  return view('auth.owner',[
+    'applications'=>Application::all(),
+    'admins'=>Admin::all(),
+  ]);
 }
 
 
