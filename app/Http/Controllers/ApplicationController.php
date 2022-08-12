@@ -27,4 +27,8 @@ public function receive(){
 Application::create($formData);
 return redirect('/');
 }
+
+
+
+
 }

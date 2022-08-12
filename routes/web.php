@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DecisionController;
 use App\Http\Controllers\PostsController;
 use App\Models\Admin;
 use App\Models\Comment;
@@ -49,7 +50,12 @@ Route::get('/application',[ApplicationController::class,"application"]);
 Route::post('/application',[ApplicationController::class, "receive"]);
 
 
+
 //-----------------------------ordering-----------------------//
 Route::get('/buy',function(){
     return view('order');
 });
+
+//----------------------------adminDecision_-------------------//
+Route::get('/applications/{application}',[DecisionController::class,"decision"])->middleware('owner');
+Route::post('/applications/{application}',[DecisionController::class,"accept"])->middleware('owner');

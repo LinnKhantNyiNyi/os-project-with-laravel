@@ -22,6 +22,7 @@ return new class extends Migration
             $table->boolean('is_owner')->default(false);
             $table->string('ph_number')->nullable();
             $table->string('address')->nullable();
+             $table->string('shopname')->nullable();
             $table->timestamps();
         });
     }
