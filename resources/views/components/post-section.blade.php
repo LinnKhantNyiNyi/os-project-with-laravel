@@ -17,11 +17,11 @@
                 width="250px"
               />
               <div class="card-body border border-2">
-                <h5 class="card-title font text-dark fs-2 text-center">
+                <h5 class="card-title font text-dark fs-2">
                   {{$product->name}}
                 </h5>
 
-                <p class="font text-dark fs-3 text-center">{{$product->price}}</p>
+                <p class="font text-dark fs-3">{{$product->price}}</p>
               </div>
             </div>
           </a>

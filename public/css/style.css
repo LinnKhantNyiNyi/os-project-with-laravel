@@ -106,3 +106,9 @@ textarea {
     position: relative;
     left: 30px;
 }
+
+.scroll-bg {
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+}

@@ -72,6 +72,7 @@ public function owner(){
   return view('auth.owner',[
     'applications'=>Application::all(),
     'admins'=>Admin::all(),
+    'users'=>User::all()
   ]);
 }
 
