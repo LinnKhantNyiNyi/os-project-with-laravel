@@ -36,12 +36,12 @@ Route::post('/login',[AuthController::class,'relogin'])->middleware('guest');
 Route::post('/logout',[AuthController::class,'logout'])->middleware('auth');
 
 //-----------------------------Adminpannel--------------------//
-Route::get('/create',[AuthController::class,"create"]);
+Route::get('/create',[AuthController::class,"create"])->middleware('admin');
 
 
 
 //-----------------------------ownerpannel-------------------//
-Route::get('/owner',[AuthController::class,'owner']);
+Route::get('/owner',[AuthController::class,'owner'])->middleware('owner');
 
 
 //----------------------------application--------------------//

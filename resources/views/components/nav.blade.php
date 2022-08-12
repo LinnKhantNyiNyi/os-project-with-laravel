@@ -19,15 +19,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="link">
             <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
+
+              @if(auth()->user() && auth()->user()->is_admin)
+
+                   <li class="nav-item">
+                  <a
                   class="nav-link active mt-2 text-white"
                   aria-current="page"
                   href="/create"
                   >Posts</a
                 >
               </li>
-                <li class="nav-item">
+              @endif
+                 
+              @if(auth()->user() && auth()->user()->is_owner)
+                    <li class="nav-item">
                 <a
                   class="nav-link active mt-2 text-white"
                   aria-current="page"
@@ -35,7 +41,10 @@
                   >Crontrol pannel</a
                 >
               </li>
-              @guest
+                  
+              @endif
+               
+            @guest
                   
               <li class="nav-item">
                 <a class="nav-link active mt-2 text-white" href="/register"
