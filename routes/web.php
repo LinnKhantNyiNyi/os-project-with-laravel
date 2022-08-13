@@ -36,8 +36,9 @@ Route::get('/login',[AuthController::class,'login'])->middleware('guest');
 Route::post('/login',[AuthController::class,'relogin'])->middleware('guest');
 Route::post('/logout',[AuthController::class,'logout'])->middleware('auth');
 
-//-----------------------------Adminpannel--------------------//
+//-----------------------------Adminpannel/create post--------------------//
 Route::get('/create',[AuthController::class,"create"])->middleware('admin');
+Route::post('/create',[PostsController::class,"post"])->middleware('admin');
 
 
 
@@ -60,3 +61,6 @@ Route::get('/buy',function(){
 Route::get('/applications/{application}',[DecisionController::class,"decision"])->middleware('owner');
 Route::post('/applications/{application}',[DecisionController::class,"accept"])->middleware('owner');
 Route::get('/applications/destory/{application}',[DecisionController::class,"decline"])->middleware('owner');
+
+
+

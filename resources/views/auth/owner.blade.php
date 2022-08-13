@@ -2,7 +2,7 @@
 <x-layout>
 <x-nav/>
 <x-table/>
-<x-create_form/>
+<x-create_form :categories="$categories"/>
 
 <div class="container-xxl mb-5">
     <div class="row">

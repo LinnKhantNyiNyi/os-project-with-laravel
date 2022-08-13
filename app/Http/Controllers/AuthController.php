@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Admin;
 use App\Models\Application;
+use App\Models\Category;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
@@ -63,7 +64,9 @@ public function logout(){
 
 //admin page-----------------------------------------------------------------------//
 public function create(){
-     return view('auth.create');
+     return view('auth.create',[
+      'categories'=>Category::all()
+     ]);
 }
 
 
@@ -72,7 +75,8 @@ public function owner(){
   return view('auth.owner',[
     'applications'=>Application::all(),
     'admins'=>Admin::all(),
-    'users'=>User::all()
+    'users'=>User::all(),
+    'categories'=>Category::all()
   ]);
 }
 
