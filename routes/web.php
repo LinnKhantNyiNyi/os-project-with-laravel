@@ -59,3 +59,4 @@ Route::get('/buy',function(){
 //----------------------------adminDecision_-------------------//
 Route::get('/applications/{application}',[DecisionController::class,"decision"])->middleware('owner');
 Route::post('/applications/{application}',[DecisionController::class,"accept"])->middleware('owner');
+Route::get('/applications/destory/{application}',[DecisionController::class,"decline"])->middleware('owner');

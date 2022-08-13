@@ -99,7 +99,8 @@
                  </div>
                        
 
-                        <button type="submit" class="btn btn-outline-secondary font text-dark">Submit</button>
+                        <button type="submit" class="btn btn-primary text-white">Accept</button>
+                        <a class="btn btn-danger ms-4" href="/applications/destory/{{$application->id}}">Decline</a>
                       </form>
                 </div>
             </div>

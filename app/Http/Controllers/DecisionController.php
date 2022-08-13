@@ -38,4 +38,11 @@ User::create($formData);
 $application->delete();
 return redirect('/');
 }
+
+
+public function decline(Application $application){
+  
+ $application->delete();
+return redirect('/');
+ }
 }
