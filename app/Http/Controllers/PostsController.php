@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -10,7 +11,8 @@ class PostsController extends Controller
 {
     public function index(){
         return view('index',[
-            "products"=>Product::all()
+            "products"=>Product::latest()->filter(request(['search','category']))->get(),
+            "categories"=>Category::all()
         ]);
     }
 

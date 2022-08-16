@@ -43,7 +43,9 @@
                         
                     
                 <!-----------------------------option--------------------------->
+
                   <div class="mb-3">
+                    <label for="category" class="mb-2 mt-3">Choose Category of Your Product</label>
                              <select
                         name="category_id"
                         id="category"

@@ -1,6 +1,6 @@
   <div class="bg2 container-xxl p-5 pt-0 border">
 
-    <x-categoryFilter :products="$products"/>
+    <x-categoryFilter :categories="$categories"/>
 
     
       <!-----------Post section----------->
@@ -11,7 +11,7 @@
             <div class="card shadow p-2">
              
               <img
-                src="img/nl.jpg"
+                src="{{asset("storage/$product->photo_1") }}"
                 class="card-img-top p-1"
                 height="250px"
                 width="250px"

@@ -11,15 +11,17 @@
           >
             Category
           </button>
-          @foreach($products as $product)
+          @foreach($categories as $category)
            <div class="row">
             <div class="col">
               <div class="collapse multi-collapse" id="multiCollapseExample">
-                <div
-                  class="mt-1 p-2 border-bottom border-secondary font text-dark text-center item"
-                >
-                 {{$product->category->name}}
-                </div>
+                <a href="/?category={{$category->name}}">
+                  <div
+                    class="mt-1 p-2 border-bottom border-secondary font text-dark text-center item"
+                  >
+                   {{$category->name}}
+                  </div>
+                </a>
               </div>
             </div>
           </div>
