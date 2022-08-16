@@ -1,15 +1,15 @@
 .bg {
-    background-color: #202a44;
+    background-color: #ff7f50; /*#202a44*/
 }
 .navbar-brand,
 .nav-item,
 .bannerlogo,
 .font {
-    font-family: "Dancing Script", cursive;
+    font-family: "Jost", sans-serif;
 }
 
 .font {
-    font-family: "Dancing Script", cursive;
+    font-family: "Jost", sans-serif; /*font-family: "Dancing Script", cursive;*/
     font-size: 20px;
     font-weight: bold;
 }
@@ -25,7 +25,7 @@
     font-weight: bold;
 }
 .banner {
-    background-image: url("/img/bg2.jpg");
+    background-image: url("/img/bg3.jpg");
     height: 550px;
 }
 

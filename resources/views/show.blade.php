@@ -9,10 +9,10 @@
   <div class="row ">
 <!----------------photos-->
     <div class="col col-lg-4 bg2 photos  mt-2">
-      <img src="/img/dr1.jpg" width="100%" class="responsive-fluid">
+      <img src="{{asset("storage/$product->photo_1")}}" width="100%" height="400px" class="responsive-fluid border border-1">
       <div class="d-flex justify-content-center">
-        <img src="/img/blank-profile-picture-973460__340.webp" width="50%" class="responsive-fluid">
-        <img src="/img/blank-profile-picture-973460__340.webp" width="50%" class="responsive-fluid">
+        <img src="{{asset("storage/$product->photo_2")}}" width="50%" height="250px"class="responsive-fluid border border-1">
+        <img src="{{asset("storage/$product->photo_3")}}" width="50%" height="250px" class="responsive-fluid border border-1">
       </div>
     </div>
 

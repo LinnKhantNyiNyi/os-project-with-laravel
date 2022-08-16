@@ -15,7 +15,8 @@
            <div class="row">
             <div class="col">
               <div class="collapse multi-collapse" id="multiCollapseExample">
-                <a href="/?category={{$category->name}}">
+                <a href="/?category={{$category->name}}"
+                  class="text-decoration-none">
                   <div
                     class="mt-1 p-2 border-bottom border-secondary font text-dark text-center item"
                   >

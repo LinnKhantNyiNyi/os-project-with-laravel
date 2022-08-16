@@ -7,7 +7,7 @@
 
       <div class="d-flex justify-content-around">
         <div class="d-flex align-items-center ms-2">
-          <h1 class="display-1 mainlogo desktop">Shop</h1>
+          <h1 class="display-1 mainlogo desktop text-white">Best Sales</h1>
         </div>
 
         <div class="d-flex justify-content-center me-4">

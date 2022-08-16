@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('price');
             $table->string('photo_1')->nullable()->default('productphotos/ina.png');
-            $table->string('photo_2')->nullable();
-            $table->string('photo_3')->nullable();
+            $table->string('photo_2')->nullable()->default('productphotos/ina.png');
+            $table->string('photo_3')->nullable()->default('productphotos/ina.png');
             $table->timestamps();
         });
     }
