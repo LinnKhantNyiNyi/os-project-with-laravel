@@ -1,15 +1,15 @@
-.bg {
-    background-color: #ff7f50; /*#202a44*/
-}
+/* .bg {
+    background-color: #ff7f50; 
+} */
 .navbar-brand,
 .nav-item,
 .bannerlogo,
 .font {
-    font-family: "Jost", sans-serif;
+    font-family: "Share Tech", sans-serif;
 }
 
 .font {
-    font-family: "Jost", sans-serif; /*font-family: "Dancing Script", cursive;*/
+    font-family: "Share Tech", sans-serif; /*font-family: "Dancing Script", cursive;*/
     font-size: 20px;
     font-weight: bold;
 }
@@ -25,13 +25,13 @@
     font-weight: bold;
 }
 .banner {
-    background-image: url("/img/bg3.jpg");
-    height: 550px;
+    /* background-image: url("/img/bg3.jpg"); */
+    height: 800px;
 }
 
 .mainlogo {
-    font-family: "Dancing Script", cursive;
-    font-size: 120px;
+    font-size: 150px;
+    font-family: "Share Tech", sans-serif;
 }
 
 .search {
@@ -62,7 +62,7 @@
 }
 
 .font2 {
-    font-family: "Gentium Plus", serif;
+    font-family: "Share Tech", sans-serif;
 }
 .history {
     width: 100%;

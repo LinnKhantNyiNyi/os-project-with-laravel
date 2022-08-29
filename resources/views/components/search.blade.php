@@ -1,6 +1,6 @@
 <!--Search Bar-------------->
 
-    <div class="container-xxl bg filter">
+    <div class="container-fluid bg filter">
       <div class="d-flex justify-content-center">
         <form class="d-flex search py-4 input-group" role="search">
           <input

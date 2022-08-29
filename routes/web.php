@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\DecisionController;
 use App\Http\Controllers\PostsController;
 use App\Models\Admin;
@@ -62,5 +63,6 @@ Route::get('/applications/{application}',[DecisionController::class,"decision"])
 Route::post('/applications/{application}',[DecisionController::class,"accept"])->middleware('owner');
 Route::get('/applications/destory/{application}',[DecisionController::class,"decline"])->middleware('owner');
 
-
+//---------------------------------comment----------------------//
+Route::post('/show/{product}', [CommentController::class,'comment']);
 

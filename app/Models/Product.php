@@ -14,7 +14,7 @@ public function scopeFilter($query,$filter){
        $query->when($filter['search'] ??  false , function($query,$search){
             $query->where('name','LIKE','%'.$search.'%')
                   ->orWhereHas('category',function($query) use($search){
-                        $query->where("name",$search);
+                        $query->where("name",'LIKE','%'.$search.'%');
                     });
            });
 

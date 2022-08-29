@@ -1,22 +1,22 @@
-  <div class="bg2 container-xxl p-5 pt-0 border">
+  <div class="bg2 container-fluid p-5 pt-0 ">
 
     <x-categoryFilter :categories="$categories"/>
 
     
       <!-----------Post section----------->
-      <div class="row g-5 product mt-2">
+      <div class="row g-1 product mt-2">
          @foreach ($products as $product)
-        <div class="col col-12 col-md-4">
+        <div class="col col-4 col-md-2">
           <a href="/show/{{$product->id}}" class="text-decoration-none text-dark">
-            <div class="card shadow p-2">
+            <div class="card p-2">
              
               <img
                 src="{{asset("storage/$product->photo_1") }}"
-                class="card-img-top p-1"
+                class="card-img-top p-1  border-bottom"
                 height="250px"
                 width="250px"
               />
-              <div class="card-body border border-2">
+              <div class="card-body ">
                 <h5 class="card-title font text-dark fs-2">
                   {{$product->name}}
                 </h5>

@@ -5,7 +5,7 @@
 
     </div>
 <!----------------photos-->
-<div class="container-xxl py-3 bg2 border">
+<div class="container-fluid py-3 bg2 border">
   <div class="row ">
 <!----------------photos-->
     <div class="col col-lg-4 bg2 photos  mt-2">
@@ -35,8 +35,9 @@
      <div class="form-floating py-3 my-3 bg shadow" >
       <h4 class="font2 ms-3 text-white">Please leave your opinion and advice for our Product.</h4>
       <div class="d-flex justify-content-around">
-        <form action="" class="py-2 comment d-flex justify-content-around">
-          <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+        <form action="/show/{{$product->id}}" method="POST" class="py-2 comment d-flex justify-content-around">
+          @csrf
+          <textarea class="form-control" placeholder="" id="floatingTextarea" name="comment"></textarea>
           <button class="btn btn-secondary font fs-6  ms-3" type="submit">Submit</button>
         </form>
       </div>
@@ -48,7 +49,7 @@
 </din>
 <!--Comment=======================-->
 
-<div class="container-xxl py-3 bg2 mb-5 border ">
+<div class="container-fluid py-3 bg2 mb-5 ">
        <h1 class="text-center font2 fs-1">All your advices here!</h1>
        <div class="d-flex justify-content-center mt-5">
         <div class="card" style="width: 58rem;">

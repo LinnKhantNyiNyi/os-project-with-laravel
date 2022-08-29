@@ -1,9 +1,8 @@
   <!---------------------------NavBar---------------------------------->
-    <div class="container-xxl bg shadow">
+    <div class="container-fluid">
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand text-white" href="/"
-          >Navbar <img src="/img/buterflies.png" height="40px" width="40px"
-        /></a>
+        <a class="navbar-brand text-dark ms-3" href="/"
+          >Navbar</a>
 
         <button
           class="navbar-toggler bg-light"
@@ -20,11 +19,20 @@
           <div class="link">
             <ul class="navbar-nav mb-2 mb-lg-0">
 
+               <li class="nav-item">
+                <a class="nav-link active mt-2 text-dark" 
+                 data-bs-toggle="offcanvas" 
+                 href="#category" 
+                 role="button" 
+                 aria-controls="offcanvasExample"
+                >Category</a>
+              </li>
+
               @if(auth()->user() && auth()->user()->is_admin)
 
                    <li class="nav-item">
                   <a
-                  class="nav-link active mt-2 text-white"
+                  class="nav-link active mt-2 text-dark"
                   aria-current="page"
                   href="/create"
                   >Posts</a
@@ -35,7 +43,7 @@
               @if(auth()->user() && auth()->user()->is_owner)
                     <li class="nav-item">
                 <a
-                  class="nav-link active mt-2 text-white"
+                  class="nav-link active mt-2 text-dark"
                   aria-current="page"
                   href="/owner"
                   >Crontrol pannel</a
@@ -47,12 +55,12 @@
             @guest
                   
               <li class="nav-item">
-                <a class="nav-link active mt-2 text-white" href="/register"
+                <a class="nav-link active mt-2 text-dark" href="/register"
                   >Register</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active mt-2 text-white" href="/login"
+                <a class="nav-link active mt-2 text-dark" href="/login"
                   >Login</a
                 >
               </li>
@@ -61,7 +69,7 @@
               @auth
               <li class="nav-item">
                 <a
-                  class="nav-link mt-1 active text-white"
+                  class="nav-link mt-1 active text-dark"
                   data-bs-toggle="offcanvas"
                   href="#offcanvasExample"
                   role="button"
@@ -76,7 +84,7 @@
                 </a>
               </li>
               @endauth
-             
+               
             </ul>
           </div>
         </div>

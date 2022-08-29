@@ -34,7 +34,7 @@
                     <div class="col col-12">
                           @foreach ($applications as $application)
                              <div class="card rounded-0 border-0 border-bottom">
-                            <a href="/applications/{{$application->id}}" class="text-decoration-none text-white">
+                            <a href="/applications/{{$application->id}}" class="text-decoration-none text-dark">
                                 <div class="card-body">
                                     <h5 class="card-title">{{$application->name}}</h5>
                                          <p class="card-text mt-1 mb-0">{{$application->shopname}}</p>

@@ -1,4 +1,4 @@
-  <div class="container-xxl bg p-3">
+  <div class="container-fluid bg-dark p-3 pt-5 mt-5">
       <h1 class="navbar-brand ms-3 text-white">Contact us</h1>
       <div class="ms-3">
         <p class="font text-white">
