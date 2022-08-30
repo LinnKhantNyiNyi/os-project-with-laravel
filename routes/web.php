@@ -64,5 +64,5 @@ Route::post('/applications/{application}',[DecisionController::class,"accept"])-
 Route::get('/applications/destory/{application}',[DecisionController::class,"decline"])->middleware('owner');
 
 //---------------------------------comment----------------------//
-Route::post('/show/{product}', [CommentController::class,'comment']);
+Route::post('/show/{product}/comments', [CommentController::class,'comment']);
 

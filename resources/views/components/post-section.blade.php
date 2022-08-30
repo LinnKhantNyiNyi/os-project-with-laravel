@@ -6,7 +6,7 @@
       <!-----------Post section----------->
       <div class="row g-1 product mt-2">
          @foreach ($products as $product)
-        <div class="col col-4 col-md-2">
+        <div class="col col-12 col-lg-2 col-md-4">
           <a href="/show/{{$product->id}}" class="text-decoration-none text-dark">
             <div class="card p-2">
              

@@ -4,7 +4,7 @@
 
       
       <div class="d-flex justify-content-center mobile">
-        <h1 class="font text-dark logo">Shop</h1>
+        <h1 class="font text-dark logo">Best Sales</h1>
       </div>
 
       <div class="d-flex justify-content-around">

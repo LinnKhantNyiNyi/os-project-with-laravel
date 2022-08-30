@@ -1,4 +1,4 @@
-
+{{-- @dd($comments->count()) --}}
 <x-layout>
     <x-nav/>
 
@@ -31,19 +31,27 @@
      </div>
      
      
-   <!--comment form-->  
-     <div class="form-floating py-3 my-3 bg shadow" >
+   <!--comment form-->
+   @auth
+       <div class="form-floating py-3 my-3 bg bg-dark " >
       <h4 class="font2 ms-3 text-white">Please leave your opinion and advice for our Product.</h4>
       <div class="d-flex justify-content-around">
-        <form action="/show/{{$product->id}}" method="POST" class="py-2 comment d-flex justify-content-around">
+        <form action="/show/{{$product->id}}/comments" method="POST" class="py-2 comment d-flex justify-content-around">
           @csrf
-          <textarea class="form-control" placeholder="" id="floatingTextarea" name="comment"></textarea>
+          <textarea class="form-control" placeholder="" id="floatingTextarea" name="body"></textarea>
+
           <button class="btn btn-secondary font fs-6  ms-3" type="submit">Submit</button>
         </form>
       </div>
-      
-      
-    </div>
+  </div>
+   @endauth 
+   
+   @guest
+       <div class="text-center mt-4 border p-5"><h5 class="text-danger">Please Login to leave your review on product!</h5></div>
+   @endguest
+   
+   
+     
     </div>
   </div>
 </din>
@@ -52,11 +60,13 @@
 <div class="container-fluid py-3 bg2 mb-5 ">
        <h1 class="text-center font2 fs-1">All your advices here!</h1>
        <div class="d-flex justify-content-center mt-5">
-        <div class="card" style="width: 58rem;">
-          <div class="card-body">
-            <h5 class="card-title">Name</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="card border-bottom-0" style="width: 58rem;">
+          @foreach ($comments as $comment)
+          <div class="card-body border-bottom">
+            <h5 class="card-title">{{$comment->customer->name}}</h5>
+            <p class="card-text">{{$comment->body}}</p>
           </div>
+          @endforeach
         </div>
        </div>
        

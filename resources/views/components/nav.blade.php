@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand text-dark ms-3" href="/"
-          >Navbar</a>
+          >Best Sales</a>
 
         <button
           class="navbar-toggler bg-light"

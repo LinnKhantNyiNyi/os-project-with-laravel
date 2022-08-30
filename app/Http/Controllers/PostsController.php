@@ -18,7 +18,8 @@ class PostsController extends Controller
 
     public function show(Product $product){
         return view('show',[
-            "product"=>$product
+            "product"=>$product,
+            "comments"=>$product->comment()->latest()->get()
         ]);
     }
 

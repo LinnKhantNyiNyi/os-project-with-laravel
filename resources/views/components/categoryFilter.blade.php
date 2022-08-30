@@ -17,9 +17,11 @@
 
     
 @foreach ($categories as $category)
+<a href="/?category={{$category->name}}" class="text-decoration-none text-dark">
      <div class="border-bottom border-secondary p-3 font">
           {{$category->name}}
          </div>
+</a>
 @endforeach
         
 
