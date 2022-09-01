@@ -16,7 +16,9 @@ class AuthController extends Controller
 
   //Register page-------------------------------------------------------------------//
   public function register(){
-    return view('form.register');
+    return view('form.register',[
+      "categories"=>Category::all()
+    ]);
 }
 
 public function store(){
@@ -37,7 +39,9 @@ return redirect('/');
 
 //login page-----------------------------------------------------------------------//
 public function login(){
-    return view('form.login');
+    return view('form.login',[
+      "categories"=>Category::all()
+    ]);
 }
 
 public function relogin(){

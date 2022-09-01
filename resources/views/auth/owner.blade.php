@@ -2,6 +2,7 @@
 <x-layout>
 <x-nav/>
 <x-table/>
+<x-categoryFilter :categories="$categories"/>
 <x-create_form :categories="$categories"/>
 
 <div class="container-xxl mb-5">

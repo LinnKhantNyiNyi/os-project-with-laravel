@@ -1,5 +1,6 @@
 <x-layout>
     <x-nav/>
+    <x-categoryFilter :categories="$categories"/>
       <!--------------form-->
      <div class="container border form">
         <div class="row">
