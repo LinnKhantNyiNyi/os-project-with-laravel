@@ -10,7 +10,7 @@
                     <form action="/register" method="POST">
                     @csrf
                         <div class="mb-3">
-                          <label for="email" class="form-label font text-dark">Email address</label>
+                          <label for="email" class="form-label text-dark">Email address</label>
                           <input type="email" 
                           class="form-control" 
                           id="email" 
@@ -24,7 +24,7 @@
                         
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label font text-dark">Name</label>
+                            <label for="name" class="form-label  text-dark">Name</label>
                             <input 
                             type="text" 
                             class="form-control" 
@@ -38,7 +38,7 @@
                           </div>
                           
                         <div class="mb-3">
-                          <label for="password" class="form-label font text-dark">Password</label>
+                          <label for="password" class="form-label  text-dark">Password</label>
                           <input type="password" 
                           class="form-control" 
                           id="password"  
@@ -48,7 +48,7 @@
                               <p class="text-danger">{{$message}}</p>
                           @enderror
                         </div>
-                        <button type="submit" class="btn btn-outline-secondary font text-dark">Signup</button>
+                        <button type="submit" class="btn btn-outline-secondary  text-dark">Signup</button>
                       </form>
                 </div>
             </div>

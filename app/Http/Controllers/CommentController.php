@@ -8,7 +8,9 @@ use Illuminate\Http\Request;
 class CommentController extends Controller
 {
     public function comment(Product $product){
-       request()->validate([
+
+      if(auth()->user()) {
+        request()->validate([
          "body"=>['required']
        ]);
 
@@ -18,5 +20,9 @@ class CommentController extends Controller
       ]);
 
       return redirect('/show/'.$product->id);
+      }else{
+        return redirect('/login');
+      }
+       
     }
 }

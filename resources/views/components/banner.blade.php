@@ -9,8 +9,13 @@
 
       <div class="d-flex justify-content-around">
         <div class="d-flex align-items-center ms-2">
-          <h1 class="display-1 mainlogo desktop text-dark">Best Sales</h1>
-        </div>
+          <h1 class="display-1 mainlogo desktop text-dark">Best Sales<br>
+            <div class="bg-dark stick d-flex align-items-center">
+              <p class="text-white fs-1 text mt-3 ms-3">Clothings & Sneakers</p>
+            </div>
+          </h1>
+      </div>
+     
 
         <img src="img/nc.png" alt="" class="desktop" width="900px" height="800px">
 

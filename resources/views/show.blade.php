@@ -32,7 +32,7 @@
      
      
    <!--comment form-->
-   @auth
+   
        <div class="form-floating py-3 my-3 bg bg-dark " >
       <h4 class="font2 ms-3 text-white">Please leave your opinion and advice for our Product.</h4>
       <div class="d-flex justify-content-around">
@@ -44,11 +44,9 @@
         </form>
       </div>
   </div>
-   @endauth 
    
-   @guest
-       <div class="text-center mt-4 border p-5"><h5 class="text-danger">Please Login to leave your review on product!</h5></div>
-   @endguest
+   
+   
    
    
      

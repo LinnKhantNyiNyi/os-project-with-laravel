@@ -112,3 +112,8 @@ textarea {
     overflow: hidden;
     overflow-y: scroll;
 }
+
+.stick {
+    height: 65px;
+    clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
+}

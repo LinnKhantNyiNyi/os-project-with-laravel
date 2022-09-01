@@ -26,6 +26,7 @@
                         </div>
                         <button type="submit" class="btn btn-secondary">Login</button>
                       </form>
+                       <a href="/register" class="mt-3 text-secondary">Create new account</a>
                 </div>
             </div>
         </div>
