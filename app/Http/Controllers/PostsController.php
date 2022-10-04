@@ -19,7 +19,8 @@ class PostsController extends Controller
     public function show(Product $product){
         return view('show',[
             "product"=>$product,
-            "comments"=>$product->comment()->latest()->get()
+            "comments"=>$product->comment()->latest()->get(), //use comment relation us function
+            "categories"=>Category::all()
         ]);
     }
 

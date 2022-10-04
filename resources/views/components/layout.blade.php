@@ -34,5 +34,6 @@
       src="https://kit.fontawesome.com/912d856a22.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

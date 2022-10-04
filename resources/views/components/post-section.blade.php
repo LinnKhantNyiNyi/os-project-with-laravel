@@ -1,6 +1,6 @@
   <div class="bg2 container-fluid p-5 pt-0 ">
 
-    <x-categoryFilter :categories="$categories"/>
+    
 
     
       <!-----------Post section----------->

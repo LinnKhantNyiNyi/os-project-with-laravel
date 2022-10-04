@@ -8,7 +8,7 @@
                     <form action="/application" method="POST">
                     @csrf
                         <div class="mb-3">
-                          <label for="email" class="form-label font text-dark">Email address</label>
+                          <label for="email" class="form-label  text-dark">Email address</label>
                           <input type="email" 
                           class="form-control" 
                           id="email" 
@@ -22,7 +22,7 @@
                         
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label font text-dark">Name</label>
+                            <label for="name" class="form-label  text-dark">Name</label>
                             <input 
                             type="text" 
                             class="form-control" 
@@ -36,7 +36,7 @@
                           </div>
 
                            <div class="mb-3">
-                            <label for="shopname" class="form-label font text-dark">Shop Name</label>
+                            <label for="shopname" class="form-label  text-dark">Shop Name</label>
                             <input 
                             type="text" 
                             class="form-control" 
@@ -50,7 +50,7 @@
                           </div>
 
                         <div class="mb-3">
-                            <label for="name" class="form-label font text-dark">Phone Number</label>
+                            <label for="name" class="form-label  text-dark">Phone Number</label>
                             <input 
                             type="text" 
                             class="form-control" 
@@ -64,7 +64,7 @@
                           </div>
 
                           <div class="mb-3">
-                            <label for="name" class="form-label font text-dark">Address</label>
+                            <label for="name" class="form-label  text-dark">Address</label>
                             <input 
                             type="text" 
                             class="form-control" 
@@ -79,7 +79,7 @@
                           
                        
 
-                        <button type="submit" class="btn btn-outline-secondary font text-dark">Submit</button>
+                        <button type="submit" class="btn btn-outline-secondary  text-dark">Submit</button>
                       </form>
                 </div>
             </div>

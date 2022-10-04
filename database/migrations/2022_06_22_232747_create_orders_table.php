@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->foreignId('product_id');
+            $table->foreignId('admin_id');
             $table->string('address');
             $table->string('ph_number');
             $table->string('payment');

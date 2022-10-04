@@ -8,7 +8,7 @@
                     <form action="/applications/{{$application->id}}" method="POST">
                     @csrf
                         <div class="mb-3">
-                          <label for="email" class="form-label font text-dark">Email address</label>
+                          <label for="email" class="form-label  text-dark">Email address</label>
                           <input type="email" 
                           class="form-control" 
                           id="email" 
@@ -22,7 +22,7 @@
                         
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label font text-dark">Name</label>
+                            <label for="name" class="form-label  text-dark">Name</label>
                             <input 
                             type="text" 
                             class="form-control" 
@@ -36,7 +36,7 @@
                           </div>
 
                            <div class="mb-3">
-                            <label for="shopname" class="form-label font text-dark">Shop Name</label>
+                            <label for="shopname" class="form-label  text-dark">Shop Name</label>
                             <input 
                             type="text" 
                             class="form-control" 
@@ -50,7 +50,7 @@
                           </div>
 
                         <div class="mb-3">
-                            <label for="name" class="form-label font text-dark">Phone Number</label>
+                            <label for="name" class="form-label text-dark">Phone Number</label>
                             <input 
                             type="text" 
                             class="form-control" 
@@ -64,7 +64,7 @@
                           </div>
 
                           <div class="mb-3">
-                            <label for="name" class="form-label font text-dark">Address</label>
+                            <label for="name" class="form-label  text-dark">Address</label>
                             <input 
                             type="text" 
                             class="form-control" 
@@ -78,7 +78,7 @@
                           </div>
 
                           <div class="mb-3">
-                            <label for="password" class="form-label font text-dark">Password</label>
+                            <label for="password" class="form-label  text-dark">Password</label>
                             <input 
                             type="password" 
                             class="form-control" 

@@ -4,7 +4,7 @@
 
 
       <!--------------form-->
-     <div class="container  form border border-top-0">
+     <div class="container  form ">
         <div class="row">
             <div class=" col-md-5 mx-auto">
                 <div class="card p-4 my-3 bg2">
