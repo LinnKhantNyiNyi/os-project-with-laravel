@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('shops', function (Blueprint $table) {
             $table->id();
             $table->text('shop_name');
+            $table->text('shop_address');
             $table->timestamps();
         });
     }

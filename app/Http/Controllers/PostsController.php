@@ -33,8 +33,8 @@ public function post(){
 
        
         $formData=request()->validate([
-            "name" =>['required','max:225','min:4'],
-            "price"=>['required'],
+            "name" =>['required','max:225','min:4','string'],
+            "price"=>['required','integer'],
             "category_id"=>["required",Rule::exists('categories','id')]
         ]);
         $formData['admin_id']= auth()->id();

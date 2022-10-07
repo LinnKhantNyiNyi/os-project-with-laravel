@@ -20,7 +20,9 @@ public function receive(){
   "name"=>["required",'min:4',"max:225",Rule::unique('applications','name')],
   "shopname"=>["required",'min:4',"max:225"],
   "ph_num"=>["required","min:11","max:11"],
-  "address"=>["required","max:225"],
+  "shopaddress"=>["required","max:225"],
+  "sellingproducts"=>["required","max:50","min:5"],
+  "detail"=>["required","max:225","min:15"]
   
 ]);
 

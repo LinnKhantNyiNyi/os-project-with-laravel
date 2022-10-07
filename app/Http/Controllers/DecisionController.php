@@ -23,9 +23,7 @@ public function accept(Application $application){
  $formData=request()->validate([
   "email"=>["required",'email',Rule::unique('admins','email')],
   "name"=>["required",'min:4',"max:225",Rule::unique('admins','name')],
-  "shopname"=>["required",'min:4',"max:225"],
   "ph_number"=>["required","min:11","max:11"],
-  "address"=>["required","max:225"],
    "password"=>["required",'min:8',"max:225"]
   
 ]);

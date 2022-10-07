@@ -19,7 +19,9 @@ return new class extends Migration
             $table->text('name');
             $table->string('shopname');
             $table->string('ph_num');
-            $table->string('address');
+            $table->string('shopaddress');
+            $table->text('sellingproducts');
+            $table->text('detail');
             $table->timestamps();
         });
     }

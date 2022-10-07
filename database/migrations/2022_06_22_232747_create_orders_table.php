@@ -18,9 +18,8 @@ return new class extends Migration
             $table->foreignId('user_id');
             $table->foreignId('product_id');
             $table->foreignId('admin_id');
-            $table->string('address');
-            $table->string('ph_number');
-            $table->string('payment');
+           $table->integer('amount');
+           $table->integer('quantity');
             $table->timestamps();
         });
     }

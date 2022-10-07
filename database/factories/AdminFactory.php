@@ -19,10 +19,9 @@ class AdminFactory extends Factory
         return [
              'name'=> $this->faker->name(),
             'email'=>$this->faker->email(),
-            'shopname'=>"shopname",
+            'shop_id'=>1,
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
             'ph_number'=>'098178171',
-            'address'=>'somewhere'
         ];
     }
 }
