@@ -11,10 +11,14 @@ class Order extends Model
      protected $guarded = [];
 
     public function customer(){
-        return $this->belongsTo(customer::class,'user_id');
+        return $this->belongsTo(User::class,'user_id');
     }
 
     public function product(){
         return $this->belongsTo(Product::class);
+    }
+
+    public function shopkeeper(){
+        return $this->belongsTo(Admin::class,'admin_id');
     }
 }

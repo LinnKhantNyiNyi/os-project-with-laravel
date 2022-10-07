@@ -16,5 +16,13 @@ public function product(){
 public function comment(){
     return $this->hasMany(Comment::class);
 }
+
+public function orders(){
+    return $this->hasMany(Order::class);
+}
+
+public function shop(){
+    return $this->belongsTo(Shop::class,"shop_id");
+}
 }
 

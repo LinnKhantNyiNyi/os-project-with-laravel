@@ -19,9 +19,15 @@ return new class extends Migration
             $table->foreignId('category_id');
             $table->string('name');
             $table->string('price');
-            $table->string('photo_1')->nullable()->default('productphotos/ina.png');
-            $table->string('photo_2')->nullable()->default('productphotos/ina.png');
-            $table->string('photo_3')->nullable()->default('productphotos/ina.png');
+            $table->string('photo_1')->nullable()->default('productphotos/ina.jpg');
+            $table->string('photo_2')->nullable()->default('productphotos/ina.jpg');
+            $table->string('photo_3')->nullable()->default('productphotos/ina.jpg');
+            $table->string('brand')->nullable()->default("No brand is described");
+            $table->string('model')->nullable()->default("No model is descriped");
+            $table->intenger('stock');
+            $table->string('service')->nullable()->default("no service available for this product");
+            $table->text("regional_delivery_info");
+            $table->text("non_regional_delivery_info");
             $table->timestamps();
         });
     }

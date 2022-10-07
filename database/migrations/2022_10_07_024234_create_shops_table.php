@@ -13,15 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('shops', function (Blueprint $table) {
             $table->id();
-            $table->text('name');
-            $table->text('email');
-            $table->text('password');
-            $table->boolean('is_admin')->default(false);
-            $table->boolean('is_owner')->default(false);
-            $table->string('ph_number')->nullable();
-            $table->string('address')->nullable();
+            $table->text('shop_name');
             $table->timestamps();
         });
     }
@@ -33,6 +27,10 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('shops');
     }
+
+
+
+    
 };

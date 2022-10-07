@@ -16,13 +16,13 @@ return new class extends Migration
         Schema::create('admins', function (Blueprint $table) {
             $table->id();
             $table->text('name');
-            $table->text('shopname');
+            $table->foreignId('shop_id');
             $table->text('email');
             $table->text('password');
             $table->boolean('is_admin')->default(true);
             $table->boolean('is_owner')->default(false);
             $table->string('ph_number');
-            $table->string('address');
+            $table->string('shop_address');
             $table->timestamps();
         });
     }
